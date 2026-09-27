@@ -18,6 +18,8 @@
     In a cohort of 423 women aged 75–80 followed for about eight years, vertebral
     fractures found automatically by XVFA predicted incident fractures as well as
     manual assessment did.
+  image: /assets/img/papers/xvfa-survival.jpg
+  image_alt: "Kaplan–Meier curves of fracture-free survival, grouped by manual and XVFA vertebral fracture assessment"
   links:
     Paper: https://doi.org/10.1007/s00198-026-08072-9
 
@@ -31,6 +33,8 @@
     An annotation-free multimodal model that predicts fracture risk from low-dose
     spine X-rays and attributes the risk to individual vertebrae. Adding
     vertebral-body patches clearly improves C-index and Brier score over clinical baselines.
+  image: /assets/img/papers/patch-attribution.jpg
+  image_alt: "Integrated-gradients attribution maps over three vertebral-body patches from spine X-rays"
   links:
     Paper: https://doi.org/10.1007/978-3-032-09513-8_41
 
@@ -44,6 +48,8 @@
     STRAP, a masked autoencoder over a variable number of patch tokens, lets bone and
     soft tissue in HR-pQCT enter a fracture risk model separately. Including soft
     tissue measurably improves prediction.
+  image: /assets/img/papers/strap.jpg
+  image_alt: "Attribution map over an HR-pQCT cross-section, separating bone from soft tissue"
   links:
     Paper: https://doi.org/10.1007/978-3-032-05185-1_54
 
@@ -81,6 +87,8 @@
   summary: >-
     Agent-based voyage simulation combined with boat performance data suggests that
     direct open-water crossings between Jutland and Norway were feasible in the Bronze Age.
+  image: /assets/img/papers/seafaring.jpg
+  image_alt: "Map of the Skagerrak crossing between Lista and Thy, with visibility distances marked"
   links:
     Paper: https://doi.org/10.1371/journal.pone.0320791
     Code: https://github.com/waahlstrand/voyager
@@ -107,6 +115,8 @@
     XVFA detects vertebrae, localises keypoints with calibrated uncertainty, and
     classifies fractures with differentiable Genant rules. It reaches 97% end-to-end
     AUC, and its decisions can be read in clinical terms.
+  image: /assets/img/papers/xvfa.jpg
+  image_alt: "Predicted vertebra keypoints with uncertainty regions on a low-dose lateral spine radiograph"
   links:
     Paper: https://papers.miccai.org/miccai-2024/301-Paper1871.html
     arXiv: https://arxiv.org/abs/2407.02926
@@ -135,6 +145,8 @@
     A CNN surrogate for directional diffusivity inside approximate Bayesian
     computation designs porous spinodoid microstructures with prescribed diffusion
     along each axis.
+  image: /assets/img/papers/spinodoid.jpg
+  image_alt: "3D rendering of a generated anisotropic spinodoid microstructure"
   links:
     Paper: https://doi.org/10.1038/s41598-022-21451-6
 
