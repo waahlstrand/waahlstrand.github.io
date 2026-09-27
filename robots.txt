@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://waahlstrand.github.io/sitemap.xml
