@@ -1,0 +1,109 @@
+---
+layout: default
+---
+{%- assign a = site.author -%}
+<header class="intro">
+  <img class="portrait" src="{{ a.portrait | relative_url }}" alt="Portrait of {{ a.name }}" width="120" height="120">
+  <div>
+    <h1>{{ a.name }}</h1>
+    <p class="role">{{ a.role }}<br><a href="{{ a.affiliation_url }}">{{ a.affiliation }}</a></p>
+    <nav class="links">
+      {%- for l in site.links %}
+      <a href="{{ l.url }}">{{ l.label }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</header>
+
+<section class="about">
+  <p>
+    I work on <strong>explainable deep learning for medical image analysis</strong>.
+    My main application is predicting osteoporotic fracture risk from DXA, spine radiographs and HR-pQCT,
+    with models whose predictions can be traced back to specific vertebrae, tissues and clinical criteria.
+  </p>
+  <p>
+    I came to medical imaging from machine learning for materials and microscopy,
+    and I also contribute computational methods to projects in digital humanities.
+  </p>
+</section>
+
+<section class="pubs">
+  <div class="pubs-head">
+    <h2>Publications</h2>
+    <div class="filter" role="group" aria-label="Filter publications">
+      <button type="button" data-cat="all" aria-pressed="true">All</button>
+      {%- for c in site.categories %}
+      {%- assign n = site.data.publications | where: "category", c[0] | size %}
+      <button type="button" data-cat="{{ c[0] }}" aria-pressed="false">{{ c[1] }} <span class="count">{{ n }}</span></button>
+      {%- endfor %}
+      <button type="button" class="active-tag" hidden aria-label="Clear tag filter"><span></span> ×</button>
+    </div>
+  </div>
+
+  <ol class="cards">
+    {%- for p in site.data.publications %}
+    <li class="card" data-cat="{{ p.category }}" data-tags="|{{ p.tags | join: '|' }}|">
+      <div class="meta">
+        <span class="year">{{ p.year }}</span>
+        <span class="venue">{{ p.venue }}</span>
+        <span class="cat cat-{{ p.category }}">{{ site.categories[p.category] }}</span>
+      </div>
+      <h3>{% assign first = p.links | first %}{% if first %}<a href="{{ first[1] }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+      <p class="authors">
+        {%- for name in p.authors -%}
+          {%- if name contains a.match -%}<span class="me">{{ name }}</span>{%- else -%}{{ name }}{%- endif -%}
+          {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      </p>
+      <p class="summary">{{ p.summary }}</p>
+      <div class="foot">
+        <span class="plinks">
+          {%- for l in p.links %}
+          <a href="{{ l[1] }}">{{ l[0] }}</a>
+          {%- endfor %}
+        </span>
+        <span class="tags">
+          {%- for t in p.tags %}
+          <button type="button" class="kw" data-tag="{{ t }}">{{ t }}</button>
+          {%- endfor %}
+        </span>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  <p class="more">Complete and up-to-date list on <a href="{{ site.links[1].url }}">Google Scholar</a>.</p>
+</section>
+
+<script>
+  (function () {
+    var state = { cat: 'all', tag: null };
+    var catButtons = document.querySelectorAll('.filter [data-cat]');
+    var chip = document.querySelector('.active-tag');
+    var cards = document.querySelectorAll('.card');
+    function render() {
+      catButtons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.cat === state.cat); });
+      chip.hidden = !state.tag;
+      if (state.tag) chip.firstChild.textContent = state.tag;
+      cards.forEach(function (c) {
+        var okCat = state.cat === 'all' || c.dataset.cat === state.cat;
+        var okTag = !state.tag || c.dataset.tags.indexOf('|' + state.tag + '|') !== -1;
+        c.hidden = !(okCat && okTag);
+      });
+      document.querySelectorAll('.kw').forEach(function (k) {
+        k.setAttribute('aria-pressed', k.dataset.tag === state.tag);
+      });
+    }
+    catButtons.forEach(function (b) {
+      b.addEventListener('click', function () { state.cat = b.dataset.cat; state.tag = null; render(); });
+    });
+    chip.addEventListener('click', function () { state.tag = null; render(); });
+    document.querySelectorAll('.kw').forEach(function (k) {
+      k.addEventListener('click', function () {
+        state.tag = state.tag === k.dataset.tag ? null : k.dataset.tag;
+        state.cat = 'all';
+        render();
+        document.querySelector('.pubs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  })();
+</script>
