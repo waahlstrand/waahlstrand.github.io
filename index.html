@@ -32,7 +32,7 @@ layout: default
     <h2>Publications</h2>
     <div class="filter" role="group" aria-label="Filter publications">
       <button type="button" data-cat="all" aria-pressed="true">All</button>
-      {%- for c in site.categories %}
+      {%- for c in site.pub_categories %}
       {%- assign n = site.data.publications | where: "category", c[0] | size %}
       <button type="button" data-cat="{{ c[0] }}" aria-pressed="false">{{ c[1] }} <span class="count">{{ n }}</span></button>
       {%- endfor %}
@@ -42,11 +42,15 @@ layout: default
 
   <ol class="cards">
     {%- for p in site.data.publications %}
-    <li class="card" data-cat="{{ p.category }}" data-tags="|{{ p.tags | join: '|' }}|">
+    <li class="card{% if p.image %} has-image{% endif %}" data-cat="{{ p.category }}" data-tags="|{{ p.tags | join: '|' }}|">
+      {%- if p.image %}
+      <img class="thumb" src="{{ p.image | relative_url }}" alt="{{ p.image_alt | default: '' }}" loading="lazy">
+      {%- endif %}
+      <div class="body">
       <div class="meta">
         <span class="year">{{ p.year }}</span>
         <span class="venue">{{ p.venue }}</span>
-        <span class="cat cat-{{ p.category }}">{{ site.categories[p.category] }}</span>
+        <span class="cat cat-{{ p.category }}">{{ site.pub_categories[p.category] }}</span>
       </div>
       <h3>{% assign first = p.links | first %}{% if first %}<a href="{{ first[1] }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
       <p class="authors">
@@ -67,6 +71,7 @@ layout: default
           <button type="button" class="kw" data-tag="{{ t }}">{{ t }}</button>
           {%- endfor %}
         </span>
+      </div>
       </div>
     </li>
     {%- endfor %}

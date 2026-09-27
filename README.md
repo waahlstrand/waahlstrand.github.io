@@ -12,7 +12,7 @@ A minimal Jekyll homepage. There is no theme and there are no plugins.
 
 **Adding a paper:** add an entry at the top of `_data/publications.yml`. Set `category` to `imaging` or `humanities`, and give it a few generic `tags`. Reuse existing tags where you can, since clicking a tag shows every paper that has it. The first link becomes the link on the card title.
 
-**Adding an image to a card:** put the figure in `assets/img/papers/`. Then add `image: /assets/img/papers/<file>` to the paper's entry, and optionally `image_alt:` with a short description. The image is shown as a thumbnail cropped to 4:3, so pick a figure whose important part is near the centre. Keep files under about 200 KB; around 600 px wide is plenty.
+**Adding an image to a card:** put the figure in `assets/img/papers/`. Then add `image: /assets/img/papers/<file>` to the paper's entry, and optionally `image_alt:` with a short description. The image fills the card's left edge on desktop and its top edge on phones. It is cropped to fit, so pick a figure whose important part is near the centre; roughly square or portrait figures work best. Keep files under about 200 KB; around 600 px wide is plenty.
 
 **Building locally:**
 

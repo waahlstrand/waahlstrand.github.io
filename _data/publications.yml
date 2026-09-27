@@ -1,11 +1,11 @@
 # Publications, newest first.
 #
-# category: one of the keys in _config.yml -> categories (imaging | humanities)
+# category: one of the keys in _config.yml -> pub_categories (imaging | humanities)
 # tags:     short, generic keywords; reuse existing ones where possible (clicking a tag filters the list)
 # authors: list; your own name is highlighted automatically (see _config.yml -> author.match)
 # summary: one or two plain sentences; this is what the card shows
 # links:   any label -> url; shown in the order given
-# image:   optional; path to a figure, e.g. /assets/img/papers/xvfa.png (shown cropped to 4:3)
+# image:   optional; path to a figure, e.g. /assets/img/papers/xvfa.png (fills the card's left edge; cropped to fit)
 # image_alt: optional; a short description of the image for screen readers
 
 - title: "Vertebral fractures identified on lateral DXA images by deep learning predict incident fractures in older women"

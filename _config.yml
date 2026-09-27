@@ -28,10 +28,9 @@ links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/waahlstrand/
 
-# Research areas used to label publication cards (order = filter order)
-areas:
-  medical: Medical imaging
-  materials: Materials
+# Top-level categories for publications (order = filter order)
+pub_categories:
+  imaging: Image analysis
   humanities: Digital humanities
 
 markdown: kramdown
