@@ -18,7 +18,7 @@
     In a cohort of 423 women aged 75–80 followed for about eight years, vertebral
     fractures found automatically by XVFA predicted incident fractures as well as
     manual assessment did.
-  image: /assets/img/papers/xvfa-survival.jpg
+  image: /assets/img/papers/xvfa-survival.png
   image_alt: "Kaplan–Meier curves of fracture-free survival, grouped by manual and XVFA vertebral fracture assessment"
   links:
     Paper: https://doi.org/10.1007/s00198-026-08072-9
@@ -58,7 +58,7 @@
     An annotation-free multimodal model that predicts fracture risk from low-dose
     spine X-rays and attributes the risk to individual vertebrae. Adding
     vertebral-body patches clearly improves C-index and Brier score over clinical baselines.
-  image: /assets/img/papers/patch-attribution.jpg
+  image: /assets/img/papers/patch-attribution.png
   image_alt: "Integrated-gradients attribution maps over three vertebral-body patches from spine X-rays"
   links:
     Paper: https://doi.org/10.1007/978-3-032-09513-8_41
@@ -73,7 +73,7 @@
     STRAP, a masked autoencoder over a variable number of patch tokens, lets bone and
     soft tissue in HR-pQCT enter a fracture risk model separately. Including soft
     tissue measurably improves prediction.
-  image: /assets/img/papers/strap.jpg
+  image: /assets/img/papers/strap.png
   image_alt: "Attribution map over an HR-pQCT cross-section, separating bone from soft tissue"
   links:
     Paper: https://doi.org/10.1007/978-3-032-05185-1_54
@@ -112,7 +112,7 @@
   summary: >-
     Agent-based voyage simulation combined with boat performance data suggests that
     direct open-water crossings between Jutland and Norway were feasible in the Bronze Age.
-  image: /assets/img/papers/seafaring.jpg
+  image: /assets/img/papers/seafaring.png
   image_alt: "Map of the Skagerrak crossing between Lista and Thy, with visibility distances marked"
   links:
     Paper: https://doi.org/10.1371/journal.pone.0320791
@@ -128,7 +128,7 @@
     XVFA detects vertebrae, localises keypoints with calibrated uncertainty, and
     classifies fractures with differentiable Genant rules. It reaches 97% end-to-end
     AUC, and its decisions can be read in clinical terms.
-  image: /assets/img/papers/xvfa.jpg
+  image: /assets/img/papers/xvfa.png
   image_alt: "Predicted vertebra keypoints with uncertainty regions on a low-dose lateral spine radiograph"
   links:
     Paper: https://papers.miccai.org/miccai-2024/301-Paper1871.html
@@ -183,7 +183,7 @@
     thickness of 2D materials. Thickness is predicted to within a monolayer.
   links:
     Paper: https://doi.org/10.1093/micmic/ozad067.341
-    Code: https://github.com/waahlstrand/pacbed
+    # Code: https://github.com/waahlstrand/pacbed
 
 - title: "Inverse design of anisotropic spinodoid materials with prescribed diffusivity"
   authors: [Magnus Röding, Victor Wåhlstrand Skärström, Niklas Lorén]
@@ -195,7 +195,7 @@
     A CNN surrogate for directional diffusivity inside approximate Bayesian
     computation designs porous spinodoid microstructures with prescribed diffusion
     along each axis.
-  image: /assets/img/papers/spinodoid.jpg
+  image: /assets/img/papers/spinodoid.png
   image_alt: "3D rendering of a generated anisotropic spinodoid microstructure"
   links:
     Paper: https://doi.org/10.1038/s41598-022-21451-6
@@ -244,7 +244,7 @@
   venue: DiPaDA workshop, DHNB
   year: 2022
   category: humanities
-  tags: [parliamentary records, text mining, mixed methods]
+  tags: [parliamentary records, text mining, mixed methods, history of concepts]
   summary: >-
     Conceptual history and computational linguistics combined on a century of
     parliamentary records. Over time “the market” becomes more abstract and is
@@ -257,7 +257,7 @@
   venue: "Live and Learn: Festschrift in honor of Lars Borin"
   year: 2022
   category: humanities
-  tags: [terrorism, parliamentary records, text mining]
+  tags: [terrorism, parliamentary records, text mining, history of concepts]
   summary: >-
     Traces how the words terror and terrorism were used in Swedish parliamentary
     records over a century.
@@ -281,7 +281,9 @@
   venue: Master’s thesis
   year: 2019
   category: imaging
-  tags: [microscopy, parameter estimation]
+  tags: [microscopy, parameter estimation, diffusion]
   summary: >-
     Deep learning for estimating diffusion parameters from FRAP experiments. This
     is the groundwork for DeepFRAP.
+  links:
+    Thesis: https://odr.chalmers.se/items/378bd435-062c-4bf6-889f-3693c43d6cc3

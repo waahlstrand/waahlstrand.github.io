@@ -10,15 +10,15 @@ author:
   name: Victor Wåhlstrand
   # Author names containing this string are highlighted on publication cards
   match: Wåhlstrand
-  role: Doctoral student, Signal Processing and Biomedical Engineering
+  role: Doctoral student, Computer Vision and Image Analysis
   affiliation: Chalmers University of Technology
   affiliation_url: https://www.chalmers.se/en/persons/vicska/
-  email: victor.wahlstrand.skarstrom@chalmers.se
+  email: victor.wahlstrand@chalmers.se
   portrait: /assets/img/portrait.jpg
 
 links:
   - label: Email
-    url: mailto:victor.wahlstrand.skarstrom@chalmers.se
+    url: mailto:victor.wahlstrand@chalmers.se
   - label: Scholar
     url: https://scholar.google.com/citations?user=MkVjqS4AAAAJ&hl=en
   - label: GitHub
