@@ -23,6 +23,31 @@
   links:
     Paper: https://doi.org/10.1007/s00198-026-08072-9
 
+- title: "Exemplar diffusion: Improving medical object detection with opportunistic labels"
+  authors: [Victor Wåhlstrand, Jennifer Alvén, Ida Häggström]
+  venue: arXiv preprint
+  year: 2026
+  category: imaging
+  tags: [object detection, generative models, uncertainty]
+  summary: >-
+    A training-free way to use whatever labels already exist for an image at test
+    time to improve diffusion-based object detection. It improves precision and
+    recall, is robust to label quality, and gives uncertainty estimates.
+  links:
+    arXiv: https://arxiv.org/abs/2603.15267
+
+- title: "‘Do you want to know who you are?’ The rise of genetic ancestry testing and the search for genealogies"
+  authors: [Kristian Kristiansen, Victor Wåhlstrand, Daniel Brodén, Mats Ahlgren, Marie Louise Stig Sørensen, Michael Rowlands, Hannes Schroeder]
+  venue: Current Swedish Archaeology
+  year: 2026
+  category: humanities
+  tags: [archaeology, survey]
+  summary: >-
+    A survey of nearly 900 Swedes who took consumer DNA tests. Most were motivated by
+    family history rather than national identity.
+  links:
+    Paper: https://doi.org/10.37718/CSA.2025.02
+
 - title: "Patch-level attribution of multimodal fracture risk prediction"
   authors: [Victor Wåhlstrand, Erik Blomqvist, Jennifer Alvén, Lisa Johansson, Mattias Lorentzon, Ida Häggström]
   venue: MLMI workshop, MICCAI
@@ -93,18 +118,6 @@
     Paper: https://doi.org/10.1371/journal.pone.0320791
     Code: https://github.com/waahlstrand/voyager
 
-- title: "‘Do you want to know who you are?’ The rise of genetic ancestry testing and the search for genealogies"
-  authors: [Kristian Kristiansen, Victor Wåhlstrand, Daniel Brodén, Mats Ahlgren, Marie Louise Stig Sørensen, Michael Rowlands, Hannes Schroeder]
-  venue: Current Swedish Archaeology
-  year: 2025
-  category: humanities
-  tags: [archaeology, survey]
-  summary: >-
-    A survey of nearly 900 Swedes who took consumer DNA tests. Most were motivated by
-    family history rather than national identity.
-  links:
-    Paper: https://doi.org/10.37718/CSA.2025.02
-
 - title: "Explainable vertebral fracture analysis with uncertainty estimation using differentiable rule-based classification"
   authors: [Victor Wåhlstrand Skärström, Lisa Johansson, Jennifer Alvén, Mattias Lorentzon, Ida Häggström]
   venue: MICCAI
@@ -121,6 +134,43 @@
     Paper: https://papers.miccai.org/miccai-2024/301-Paper1871.html
     arXiv: https://arxiv.org/abs/2407.02926
     Code: https://github.com/waahlstrand/XVFA
+
+- title: "Kritikens ordning visualiserad. Mixade metoder i studiet av bokrecensioner"
+  authors: [Lina Samuelsson, Daniel Brodén, Jonas Ingvarsson, Victor Wåhlstrand]
+  venue: Samlaren
+  year: 2024
+  category: humanities
+  tags: [literary studies, visualization, mixed methods]
+  summary: >-
+    A Swedish-language article on combining data visualization with close reading
+    in the study of historical Swedish book reviews.
+  links:
+    PDF: https://uu.diva-portal.org/smash/get/diva2:1941724/FULLTEXT01.pdf
+
+- title: "Visualization as defamiliarization. Mixed-methods approaches to historical book reviews"
+  authors: [Daniel Brodén, Jonas Ingvarsson, Lina Samuelsson, Victor Wåhlstrand Skärström]
+  venue: Journal of Computational Literary Studies
+  year: 2024
+  category: humanities
+  tags: [literary studies, visualization, mixed methods]
+  summary: >-
+    Data visualizations of about 700 Swedish book reviews from 1906, 1956 and 2006,
+    used to make a familiar body of criticism look strange again and reveal patterns
+    that close reading misses.
+  links:
+    Paper: https://doi.org/10.26083/tuprints-00027397
+
+- title: "Who’s afraid of terrorism and extremism?"
+  authors: [Daniel Brodén, Mats Fridlund, Patrik Öhberg, Victor Wåhlstrand]
+  venue: "Book chapter in Violent Extremism: A Nordic Outlook"
+  year: 2024
+  category: humanities
+  tags: [terrorism]
+  summary: >-
+    A chapter on who in Sweden worries about terrorism and extremism, in an edited
+    volume on violent extremism in the Nordic countries.
+  links:
+    Book: https://rowman.com/ISBN/9781793632852/Violent-Extremism-A-Nordic-Outlook
 
 - title: "Convolutional neural networks and position averaged convergent beam electron diffraction for determining the structure of 2D materials"
   authors: [Andrew B. Yankovich, Magnus Röding, Victor Wåhlstrand Skärström, Alok Ranjan, Eva Olsson]
@@ -150,14 +200,88 @@
   links:
     Paper: https://doi.org/10.1038/s41598-022-21451-6
 
+- title: "A boat is a boat is a boat… unless it is a horse – Rethinking the role of typology"
+  authors: [Christian Horn, Ashely Green, Victor Wåhlstrand Skärström, Cecilia Lindhé, Mark Peternell, Johan Ling]
+  venue: Open Archaeology
+  year: 2022
+  category: humanities
+  tags: [archaeology, classification]
+  summary: >-
+    Machine learning and human experts both bring biases to classifying Bronze Age
+    rock art, but machines apply them consistently. The algorithm’s apparent
+    mistakes point to real ambiguity in the typology.
+  links:
+    Paper: https://doi.org/10.1515/opar-2022-0277
+
+- title: "The new order of criticism. Explorations of book reviews between the interpretative and algorithmic"
+  authors: [Jonas Ingvarsson, Daniel Brodén, Lina Samuelsson, Victor Wåhlstrand Skärström, Niklas Zechner]
+  venue: DHNB
+  year: 2022
+  category: humanities
+  tags: [literary studies, text mining, mixed methods]
+  summary: >-
+    Language technology and discourse analysis applied together to about 700 Swedish
+    book reviews from 1906, 1956 and 2006. Word statistics partly confirm the themes
+    found by close reading and show shifts in critical vocabulary over the century.
+  links:
+    Paper: https://ceur-ws.org/Vol-3232/paper20.pdf
+
+- title: "Unifying or divisive threats? Anxiety about political terrorism and extremism among the Swedish public and parliamentarians, 1986–2020"
+  authors: [Patrik Öhberg, Daniel Brodén, Mats Fridlund, Victor Wåhlstrand Skärström, Magnus P. Ängsal]
+  venue: DHNB
+  year: 2022
+  category: humanities
+  tags: [terrorism, parliamentary records, survey]
+  summary: >-
+    National survey data and parliamentary motions show that right-leaning citizens
+    and politicians worry more about terrorism, left-leaning ones more about
+    extremism, and that both concerns spike after major attacks.
+  links:
+    Paper: https://ceur-ws.org/Vol-3232/paper11.pdf
+
+- title: "The market as a concept in Swedish parliamentary records from 1867 to 1970: A mixed methods study"
+  authors: [Claes Ohlsson, Victor Wåhlstrand Skärström, Henrik Björck]
+  venue: DiPaDA workshop, DHNB
+  year: 2022
+  category: humanities
+  tags: [parliamentary records, text mining, mixed methods]
+  summary: >-
+    Conceptual history and computational linguistics combined on a century of
+    parliamentary records. Over time “the market” becomes more abstract and is
+    increasingly spoken of as an actor.
+  links:
+    Paper: https://ceur-ws.org/Vol-3133/paper02.pdf
+
+- title: "The diachrony of political terror: Tracing terror and terrorism in Swedish parliamentary data 1867–1970"
+  authors: [Mats Fridlund, Daniel Brodén, Victor Wåhlstrand Skärström]
+  venue: "Live and Learn: Festschrift in honor of Lars Borin"
+  year: 2022
+  category: humanities
+  tags: [terrorism, parliamentary records, text mining]
+  summary: >-
+    Traces how the words terror and terrorism were used in Swedish parliamentary
+    records over a century.
+  links:
+    Book: https://gup.ub.gu.se/publication/320415
+
 - title: "DeepFRAP: Fast fluorescence recovery after photobleaching data analysis using deep neural networks"
   authors: [Victor Wåhlstrand Skärström, Annika Krona, Niklas Lorén, Magnus Röding]
   venue: Journal of Microscopy
   year: 2021
   category: imaging
-  tags: [microscopy, diffusion]
+  tags: [microscopy, parameter estimation]
   summary: >-
     Neural networks estimate diffusion parameters directly from FRAP experiments. They
     are much faster than conventional model fitting, with comparable accuracy.
   links:
     Paper: https://doi.org/10.1111/jmi.12989
+
+- title: "Parameter estimation in FRAP using deep learning"
+  authors: [Victor Wåhlstrand Skärström]
+  venue: Master’s thesis
+  year: 2019
+  category: imaging
+  tags: [microscopy, parameter estimation]
+  summary: >-
+    Deep learning for estimating diffusion parameters from FRAP experiments. This
+    is the groundwork for DeepFRAP.
